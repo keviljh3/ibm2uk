@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ulimit -s 65535
+ulimit -n 65535
+nohup java -Xmx128M -jar /opt/finalspeed/fs.jar 2>&1 &

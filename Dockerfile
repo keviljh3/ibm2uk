@@ -14,8 +14,10 @@ RUN apt-get -y update && apt-get -y upgrade
 RUN apt-get install build-essential autoconf libtool libssl-dev git unzip libpcap-dev wget supervisor -y
 RUN apt-get install iptables -y
 RUN apt-get install libsodium-dev -y
+RUN apt-get install python3 -y
 
-RUN wget -O /root/ssr.zip https://github.com/keviljh3/ibm2uk/raw/master/shadowsocksr-akkariiin-dev.zip
+#RUN wget -O /root/ssr.zip https://github.com/keviljh3/ibm2uk/raw/master/shadowsocksr-akkariiin-dev.zip
+RUN wget -O /root/ssr.zip https://github.com/keviljh3/ibm2uk/raw/master/ssr322.zip
 RUN wget -O /root/udp2raw_amd64 https://github.com/kevinljh11/kcp_udp_fs/raw/master/udp2raw_amd64
 RUN wget -O /root/kcps64_170120 https://github.com/kevinljh11/kcp_udp_fs/raw/master/kcps64_170120
 
